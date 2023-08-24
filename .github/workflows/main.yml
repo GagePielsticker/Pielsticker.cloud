@@ -30,10 +30,10 @@ jobs:
 
       - name: Install next dependencies
         run: |
-        cd next-app
-        npm i
+          cd next-app
+          npm i
 
       - name: Run npm deploy
         run: |
-        cd ../
-        npm run deploy
+          cd ../
+          npm run deploy
