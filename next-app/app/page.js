@@ -42,10 +42,17 @@ export default function Home() {
 
                 <div className='pt-5 bg-neutral-100 text-black'>
                   <h3 className="text-2xl tracking-tight md:text-2xl xl:text-3xl">Previous Work Collaborations</h3>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
 
-                  <img src="/toyota.png" className="inline p-5 m-5" width="200px;"></img>
+                  {/* <img src="/toyota.png" className="inline p-5 m-5" width="200px;"></img>
                   <img src="/lexus.png" className="inline p-5 m-5" width="200px;"></img>
-                  <img src="/thryv.png" className="inline p-5 m-5" width="200px;"></img>
+                  <img src="/thryv.png" className="inline p-5 m-5" width="200px;"></img> */}
                 </div>
                 </div>
               </div>
