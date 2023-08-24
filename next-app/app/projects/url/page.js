@@ -68,7 +68,7 @@ export default function Home() {
         
         <CardHeader>
           <CardTitle>URL Shortening Service</CardTitle>
-          <CardDescription>Enter a URL to shorten.</CardDescription>
+          <CardDescription>Enter a URL to shorten / redirect.</CardDescription>
         </CardHeader>
         <CardContent>
           <form>

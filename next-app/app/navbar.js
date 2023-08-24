@@ -42,6 +42,7 @@ export default function Navbar() {
                 <DropdownMenuLabel>Live Projects</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuItem><Link href="/projects/url">URL Shortener</Link></DropdownMenuItem>
+                <DropdownMenuItem><Link href="/projects/authentication">User Registration</Link></DropdownMenuItem>
 
                 <DropdownMenuLabel>Serverless Templates</DropdownMenuLabel>
                 <DropdownMenuSeparator />
