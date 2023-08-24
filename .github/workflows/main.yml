@@ -25,11 +25,15 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
-      - name: Install pnpm
-        run: npm i pnpm -g
-
       - name: Install dependencies
-        run: pnpm i
+        run: npm i
+
+      - name: Install next dependencies
+        run: |
+        cd next-app
+        npm i
 
       - name: Run npm deploy
-        run: npm run deploy
+        run: |
+        cd ../
+        npm run deploy
