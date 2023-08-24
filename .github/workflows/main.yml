@@ -35,5 +35,4 @@ jobs:
 
       - name: Run npm deploy
         run: |
-          cd ../
           npm run deploy
