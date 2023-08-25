@@ -5,6 +5,7 @@ import {
   FaGithub,
   FaLinkedin
  } from 'react-icons/fa';
+ 
 
 export default function Home() {
 
@@ -29,6 +30,19 @@ export default function Home() {
                 <div>
                 <div className='pt-5 bg-neutral-100 mt-20 text-black'>
                   <h3 className="text-2xl mb-5 tracking-tight md:text-2xl xl:text-3xl">Who Am I?</h3>
+
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>Havent wrote this part yet :(</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p>
+
+                </div>
+
+                <div className='pt-5 bg-neutral-50 text-black'>
+                  <h3 className="text-2xl mb-5 tracking-tight md:text-2xl xl:text-3xl">Projects</h3>
 
                   <p>LOREM IPSUM</p>
                   <p>LOREM IPSUM</p>
