@@ -105,6 +105,21 @@ export default function Home() {
                     <CardHeader className="h-[200px]">
                     <div className='absolute up'>
                     <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    <Badge className="bg-green-500">LIVE</Badge>
+                    </div>
+                      <CardTitle className="pt-3">Pielsticker.Cloud</CardTitle>
+                      <CardDescription>I'm normally not one for front-end development and am by no means great at it. However, how do you showcase cool backend projects without a frontend for users to utilize it? Enter Pielsticker.Cloud! Built with NextJS using Tailwind & Shadcn. Deployed to AWS Lambda via SST. </CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link href="/"><Button>Check it out!</Button></Link>
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/Pielsticker.cloud"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
                     </div>
                       <CardTitle className="pt-3">REST Api Template</CardTitle>
                       <CardDescription>A template for starting an AWS based serverless api. This utilizes lambda, api-gateway, WAFv2 and other various services to build a scalable and highly-available api. Deployment of all infrastructure fully automated via serverless framework.</CardDescription>
