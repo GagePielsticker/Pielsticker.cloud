@@ -53,6 +53,7 @@ export default function Navbar() {
 
                 <DropdownMenuLabel>Other Projects</DropdownMenuLabel>
                 <DropdownMenuSeparator />
+                <DropdownMenuItem><Link href="https://github.com/GagePielsticker/Pielsticker.cloud">Pielsticker.Cloud</Link></DropdownMenuItem>
                 <DropdownMenuItem><Link target="_blank" href="https://github.com/GagePielsticker/MultiplayerPianoJS">MultiplayerPiano.JS</Link></DropdownMenuItem>
                 <DropdownMenuSeparator />
             </DropdownMenuContent>
