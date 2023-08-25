@@ -39,6 +39,7 @@ export default function Home() {
         method: 'POST',
         headers: new Headers({
             'Content-Type': 'application/json',
+            'x-api-key': 'marUogTk3oUN2rcfsw9b8mGKKNzWVdZ9WeLJE9r7',
             Accept: 'application/json',
           }),
     })
@@ -72,6 +73,7 @@ export default function Home() {
       method: 'POST',
       headers: new Headers({
           'Content-Type': 'application/json',
+          'x-api-key': 'marUogTk3oUN2rcfsw9b8mGKKNzWVdZ9WeLJE9r7',
           Accept: 'application/json',
         }),
   })
@@ -106,6 +108,7 @@ export default function Home() {
           method: 'POST',
           headers: new Headers({
               'Content-Type': 'application/json',
+              'x-api-key': 'marUogTk3oUN2rcfsw9b8mGKKNzWVdZ9WeLJE9r7',
               Accept: 'application/json',
             }),
       })
