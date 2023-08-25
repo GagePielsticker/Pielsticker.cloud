@@ -90,6 +90,21 @@ export default function Home() {
                     <CardHeader className="h-[200px]">
                     <div className='absolute up'>
                     <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    <Badge className="bg-yellow-500">IN DEV</Badge>
+                    </div>
+                      <CardTitle className="pt-3">Real-Time GraphQL Chatroom</CardTitle>
+                      <CardDescription>A real-time chatroom developed ontop of graphql subscriptions, mutations, and queries. This runs on AWS Appsync primarily with a hint of DynamoDB.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link href="/"><Button>Check it out!</Button></Link>
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/aws-graphql-chatroom"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
                     </div>
                       <CardTitle className="pt-3">REST Api Template</CardTitle>
                       <CardDescription>A template for starting an AWS based serverless api. This utilizes lambda, api-gateway, WAFv2 and other various services to build a scalable and highly-available api. Deployment of all infrastructure fully automated via serverless framework.</CardDescription>
