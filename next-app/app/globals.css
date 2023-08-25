@@ -100,3 +100,8 @@ body {
 .bglattice {
   background-image: url('/latt.png');
 }
+
+.up {
+  margin-top: -18px;
+  margin-left: -10px;
+}

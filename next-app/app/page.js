@@ -3,9 +3,20 @@
 import Link from 'next/link';
 import { 
   FaGithub,
-  FaLinkedin
+  FaLinkedin,
+  FaNpm
  } from 'react-icons/fa';
  
+ import { Button } from "@/components/ui/button"
+import {
+  Card,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
+import { Badge } from "@/components/ui/badge"
 
 export default function Home() {
 
@@ -29,7 +40,7 @@ export default function Home() {
                 <br />
                 <div>
                 <div className='pt-5 bg-neutral-100 mt-20 text-black'>
-                  <h3 className="text-2xl mb-5 tracking-tight md:text-2xl xl:text-3xl">Who Am I?</h3>
+                  {/* <h3 className="text-2xl mb-5 tracking-tight md:text-2xl xl:text-3xl">Who Am I?</h3>
 
                   <p>LOREM IPSUM</p>
                   <p>LOREM IPSUM</p>
@@ -37,21 +48,97 @@ export default function Home() {
                   <p>LOREM IPSUM</p>
                   <p>LOREM IPSUM</p>
                   <p>LOREM IPSUM</p>
-                  <p>LOREM IPSUM</p>
+                  <p>LOREM IPSUM</p> */}
 
                 </div>
 
                 <div className='pt-5 bg-neutral-50 text-black'>
                   <h3 className="text-2xl mb-5 tracking-tight md:text-2xl xl:text-3xl">Projects</h3>
 
-                  <p>LOREM IPSUM</p>
-                  <p>LOREM IPSUM</p>
-                  <p>Havent wrote this part yet :(</p>
-                  <p>LOREM IPSUM</p>
-                  <p>LOREM IPSUM</p>
-                  <p>LOREM IPSUM</p>
-                  <p>LOREM IPSUM</p>
+                  <div className="container grid w-full items-center sm:grid-cols-2 lg:grid-cols-3 gap-4 pb-10">
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    <Badge className="bg-green-500">LIVE</Badge>
+                    </div>
+                      <CardTitle className="pt-3">URL Shortening Service</CardTitle>
+                      <CardDescription>A URL shortener that takes a long url such as abcdefg.com/abcedf/abcerffg and creates a shortform redirect using our domain. Utilizes api gateway, lambda, & dynamodb.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link href="/projects/url"><Button>Check it out!</Button></Link>
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/aws-url-shortener"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
 
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    <Badge className="bg-green-500">LIVE</Badge>
+                    </div>
+                      <CardTitle className="pt-3">User Authentication</CardTitle>
+                      <CardDescription>A serverless template created as an example of user signup & JWT authentication in AWS using DynamoDB, Lambdas, WAFv2, and API-Gateway. Deployment of all infrastructure fully automated using serverless framework.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link href="/projects/authentication"><Button>Check it out!</Button></Link>
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/AWS-Auth-Template"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    </div>
+                      <CardTitle className="pt-3">REST Api Template</CardTitle>
+                      <CardDescription>A template for starting an AWS based serverless api. This utilizes lambda, api-gateway, WAFv2 and other various services to build a scalable and highly-available api. Deployment of all infrastructure fully automated via serverless framework.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/AWS-Api-Template"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-indigo-500 mr-2">AWS</Badge>
+                    </div>
+                      <CardTitle className="pt-3">GraphQL API Template</CardTitle>
+                      <CardDescription>An example GraphQL implementation in AWS Appsync. This includes WAFv2, Appsync, logging, and some other various services. Deployment of all infra is fully automated using serverless framework.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/AWS-GraphQL-Template"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-red-500">Deprecated</Badge>
+                    </div>
+                      <CardTitle className="pt-3">Multiplayerpiano.js</CardTitle>
+                      <CardDescription>A NodeJS websocket wrapper library I created to support developers wanting to interact with multiplayer piano's website in a headless manner. Current implementations were bulky and not developer friendly in terms of documentation and functionality. Enter multiplayerpiano.js! It is now archived and no longer maintained.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/MultiplayerPianoJS"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    <Link target='_blank' className='ml-5' href="https://www.npmjs.com/package/multiplayerpianojs"><Button><FaNpm className='inline-flex items-baseline pb-0.5' size={30}/></Button></Link>
+                    </CardFooter>
+                  </Card>
+
+                  <Card>
+                    <CardHeader className="h-[200px]">
+                    <div className='absolute up'>
+                    <Badge className="bg-red-500">Deprecated</Badge>
+                    </div>
+                      <CardTitle className="pt-3">Express JWT</CardTitle>
+                      <CardDescription>A scalable RESTful Api utilizing JWT authorization, MongoDB, Docker deployment, HaProxy loadbalancing, and more. This was originally created as a template to help friends understand stateless auth with express. It is now archived and no longer maintained.</CardDescription>
+                    </CardHeader>
+                    <CardFooter className="flex">
+                    <Link target='_blank' className='ml-5' href="https://github.com/GagePielsticker/Express-JWT-Boilerplate"><Button><FaGithub className='inline-flex items-baseline pb-0.5' size={20}/> Github</Button></Link>
+                    </CardFooter>
+                  </Card>
+                  </div>
                 </div>
 
                 <div className='pt-5 bg-neutral-100 text-black'>
