@@ -172,7 +172,7 @@ export default function Home() {
                 </div>
 
                 <div className='pt-5 bg-neutral-100 text-black'>
-                  <h3 className="text-2xl tracking-tight md:text-2xl xl:text-3xl">Previous Work Collaborations</h3>
+                  <h3 className="text-2xl tracking-tight md:text-2xl xl:text-3xl">Previous Worked On Projects</h3>
                   <img src="/toyota.png" className="inline p-5 m-5" width="200px;"></img>
                   <img src="/lexus.png" className="inline p-5 m-5" width="200px;"></img>
                   <img src="/thryv.png" className="inline p-5 m-5" width="200px;"></img>
